@@ -80,16 +80,103 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-text-stroke: 0.1px #000;
 }
-.homebottom{
+
+.homebottom {
     padding: 5vw 15vw;
 }
-.homebottom p{
+
+.homebottom p {
     width: 65%;
     font-size: 1.5vw;
     font-weight: 600;
     letter-spacing: -.05vw;
 }
-.homebottom p::selection{
+
+.homebottom p::selection {
     color: #fff;
     background-color: #000;
+}
+
+.featured {
+    padding: 10vw 15vw;
+}
+
+.fheading h1 {
+    line-height: 1;
+    font-size: 4.2vw;
+    font-weight: 500;
+}
+
+.fheading>h1:nth-child(2) {
+    color: transparent;
+    -webkit-text-stroke: 1px #000;
+}
+.fimages{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    margin-top: 5vw;
+}
+.fleft{
+    overflow: hidden;
+    width: 45%;
+    height: inherit;
+}
+.fleftelem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: inherit;
+}
+.fleftelem h1{
+    font-size: 2.5vw;
+    line-height: 1;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 1.5vw 0;
+}
+.fleftelem h3{
+    font-size: 1.3vw;
+    font-weight: 600;
+}
+.fleftelem h4{
+    opacity: .5;
+}
+.fright{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 45%;
+    height: inherit;
+}
+.fright .images{
+    width: 90%;
+    height: 90%;
+}
+.fright .images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.btndiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btndiv button{
+    padding: 1.3vw 2.5vw;
+    border-radius: 100px;
+    border: 1px solid #dad9d9;
+    background-color: #fff;
+    font-size: 1vw;
+    font-weight: 500;
+    letter-spacing: -.5px;
+    transition:all ease-in-out .35s;
+}
+.btndiv button:hover{
+    color: #f5f5f7;
+    background-color: #000;
+    font-size: 1.01vw;
 }
