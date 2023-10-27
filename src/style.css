@@ -9,6 +9,11 @@
     font-family: 'Quicksand', sans-serif;
 }
 
+*::selection {
+    color: #fff;
+    background-color: #000;
+}
+
 html,
 body {
     width: 100%;
@@ -81,6 +86,10 @@ body {
     -webkit-text-stroke: 0.1px #000;
 }
 
+#homemain .headings h1:hover{
+    color: #000;
+}
+
 .homebottom {
     padding: 5vw 15vw;
 }
@@ -90,11 +99,6 @@ body {
     font-size: 1.5vw;
     font-weight: 600;
     letter-spacing: -.05vw;
-}
-
-.homebottom p::selection {
-    color: #fff;
-    background-color: #000;
 }
 
 .featured {
@@ -111,61 +115,72 @@ body {
     color: transparent;
     -webkit-text-stroke: 1px #000;
 }
-.fimages{
+
+.fimages {
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 100vh;
     margin-top: 5vw;
 }
-.fleft{
+
+.fleft {
     overflow: hidden;
     width: 45%;
     height: inherit;
 }
-.fleftelem{
+
+.fleftelem {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
     height: inherit;
 }
-.fleftelem h1{
+
+.fleftelem h1 {
     font-size: 2.5vw;
     line-height: 1;
     font-weight: 600;
     text-transform: capitalize;
     margin: 1.5vw 0;
 }
-.fleftelem h3{
+
+.fleftelem h3 {
     font-size: 1.3vw;
     font-weight: 600;
 }
-.fleftelem h4{
+
+.fleftelem h4 {
     opacity: .5;
 }
-.fright{
+
+.fright {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     width: 45%;
     height: inherit;
 }
-.fright .images{
+
+.fright .images {
     width: 90%;
     height: 90%;
 }
-.fright .images img{
+
+.fright .images img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.btndiv{
+
+.btndiv {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.btndiv button{
+
+.btndiv button {
     padding: 1.3vw 2.5vw;
     border-radius: 100px;
     border: 1px solid #dad9d9;
@@ -173,9 +188,90 @@ body {
     font-size: 1vw;
     font-weight: 500;
     letter-spacing: -.5px;
-    transition:all ease-in-out .35s;
+    transition: all ease-in-out .35s;
 }
-.btndiv button:hover{
+
+.btndiv button:hover {
+    color: #f5f5f7;
+    background-color: #000;
+    font-size: 1.01vw;
+}
+
+.dev {
+    width: 100%;
+    padding: 5vw 15vw;
+}
+
+.dev h1 {
+    font-size: 3.8vw;
+    font-weight: 600;
+    width: 60%;
+    line-height: 1;
+}
+
+.dev p {
+    font-size: 1.5vw;
+    margin-top: 3vw;
+    letter-spacing: -.5px;
+    width: 60%;
+}
+
+.slides {
+    padding: 3vw 6vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slide {
+    width: 30%;
+}
+
+.slide .img {
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.slide .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide .tag {
+    padding: 10px 22px;
+    background-color: #f7f7f7;
+    margin: 20px 0;
+    width: fit-content;
+    border-radius: 100px;
+}
+
+.slide h3 {
+    font-size: 1.4vw;
+    font-weight: 600;
+    color: #3d3d3d;
+    letter-spacing: -.5px;
+}
+
+#btndiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btndiv button {
+    padding: 1.3vw 2.5vw;
+    border-radius: 100px;
+    border: 1px solid #dad9d9;
+    background-color: #fff;
+    font-size: 1vw;
+    font-weight: 500;
+    letter-spacing: -.5px;
+    transition: all ease-in-out .35s;
+}
+
+#btndiv button:hover {
     color: #f5f5f7;
     background-color: #000;
     font-size: 1.01vw;
